@@ -5,7 +5,7 @@
 <!-- Mirrored from buddsoft.com/templates/21/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2025 15:08:15 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Arkitektur - Architecture HTML Template</title>
+    <title>Huespace</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,6 +32,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+   
+    
+    
+<style>
+    /* Floating WhatsApp Button */
+/* Floating WhatsApp Button - Square Design */
+
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure full-width layout */
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #B78D65;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 0px;  /* Square with slightly rounded corners */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    color: white;
+}
+
+</style>
 </head>
 
 <body>
@@ -48,22 +90,11 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
-                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
+                    <a class="text-body px-2" href="tel:+91 9778483334"><i class="fa fa-phone-alt text-primary me-2"></i>+91 9778483334  +91 94463 81619</a>
+                    <a class="text-body px-2" href="Info@huespace.co.in"><i class="fa fa-envelope-open text-primary me-2"></i>Info@huespace.co.in</a>
                 </div>
             </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
-                    <a class="text-body px-2" href="#">Terms</a>
-                    <a class="text-body px-2" href="#">Privacy</a>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-0" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+           
         </div>
     </div>
     <!-- Topbar End -->
@@ -72,7 +103,9 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index-2.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">Arkitektur</h1>
+            <img class="me-3" src="img/logo-hue.jpg" alt="Icon" style="height: 80px; width:300px;">
+
+           
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -82,20 +115,10 @@
                 <a href="index-2.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link active">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-0 m-0">
-                        <a href="feature.html" class="dropdown-item">Our Features</a>
-                        <a href="project.html" class="dropdown-item">Our Projects</a>
-                        <a href="team.html" class="dropdown-item">Team Members</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+               
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a>
+            
         </div>
     </nav>
     <!-- Navbar End -->
@@ -105,20 +128,20 @@
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <h1 class="display-1 text-white animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Page</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
-                </ol>
-            </nav>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase">
+                        <a class="text-white" href="index-2.html">Home</a>
+                    </p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">About</p>
+              </div>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
+     <!-- About Start -->
+     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -130,19 +153,11 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h4 class="section-title">About Us</h4>
                     <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <p>Welcome to Huespace, your trusted partner in corporate business solutions. As a corporate solutions provider , we are driven by innovation, expertise, and a passion for helping businesses grow, connect, and thrive.
+                    </p>
+                    <p class="mb-4">With in-depth industry knowledge and a keen understanding of market trends, we founded Huespace to empower businesses with strategic solutions that drive success. Our comprehensive services cater to the evolving needs of modern enterprises, ensuring growth, efficiency, and long-term impact.</p>
                     <div class="d-flex align-items-center mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
-                            <h1 class="display-1 mb-n2" data-toggle="counter-up">25</h1>
-                        </div>
-                        <div class="ps-4">
-                            <h3>Years</h3>
-                            <h3>Working</h3>
-                            <h3 class="mb-0">Experience</h3>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5" href="#">Read More</a>
+                        <a class="btn btn-primary py-3 px-5" href="about.html">Read More</a>
                 </div>
             </div>
         </div>
@@ -155,16 +170,16 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="section-title">Why Choose Us!</h4>
+                    <h4 class="section-title">Why Choose Huespace?</h4>
                     <h1 class="display-5 mb-4">Why You Should Trust Us? Learn More About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">At Huespace, we are more than just a service provider—we are your strategic partner in business success. Our commitment to excellence, innovation, and tailored solutions sets us apart. Here's why you can trust us:</p>
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="d-flex align-items-start">
                                 <img class="flex-shrink-0" src="img/icons/icon-2.png" alt="Icon">
                                 <div class="ms-4">
-                                    <h3>Design Approach</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                    <h3>Proven Expertise & Experience</h3>
+                                    <p class="mb-0">Our team of skilled professionals brings years of expertise across branding, marketing, finance, business advisory, and event planning.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,8 +187,8 @@
                             <div class="d-flex align-items-start">
                                 <img class="flex-shrink-0" src="img/icons/icon-3.png" alt="Icon">
                                 <div class="ms-4">
-                                    <h3>Innovative Solutions</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                    <h3> Strategic Execution</h3>
+                                    <p class="mb-0">From planning to execution, we ensure seamless and result-driven solutions that enhance efficiency and profitability.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,8 +196,8 @@
                             <div class="d-flex align-items-start">
                                 <img class="flex-shrink-0" src="img/icons/icon-4.png" alt="Icon">
                                 <div class="ms-4">
-                                    <h3>Project Management</h3>
-                                    <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                    <h3>Long-Term Partnerships</h3>
+                                    <p class="mb-0">We believe in building lasting relationships with our clients, supporting them at every stage of their business journey.</p>
                                 </div>
                             </div>
                         </div>
@@ -200,141 +215,91 @@
     <!-- Feature End -->
 
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Team Members</h4>
-                <h1 class="display-5 mb-4">We Are Creative Architecture Team For Your Dream Home</h1>
-            </div>
-            <div class="row g-0 team-items">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
+   
         
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+   <!-- Footer Start -->
+<div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+
+           
+            
+            <!-- Address Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Address</h3>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>HueSpace LLP Door # B2 Kollamkudimugal Kochi</p>
+             
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-body me-1" href="https://www.instagram.com/huespace.in?igsh=M2Z3aGU3Mmd5ZTUy" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="https://wa.me/919778483334" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="tel:+919778483334">
+                        <i class="fa fa-phone-alt"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-0" href="mailto:Info@huespace.co.in">
+                        <i class="fa fa-envelope text-primary"></i>
+                    </a>
+                    
+
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Services</h3>
-                    <a class="btn btn-link" href="#">Architecture</a>
-                    <a class="btn btn-link" href="#">3D Animation</a>
-                    <a class="btn btn-link" href="#">House Planning</a>
-                    <a class="btn btn-link" href="#">Interior Design</a>
-                    <a class="btn btn-link" href="#">Construction</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="#">About Us</a>
-                    <a class="btn btn-link" href="#">Contact Us</a>
-                    <a class="btn btn-link" href="#">Our Services</a>
-                    <a class="btn btn-link" href="#">Terms & Condition</a>
-                    <a class="btn btn-link" href="#">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Newsletter</h3>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+               
             </div>
+           
+            <!-- Services Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Services</h3>
+                <a class="btn btn-link" href="service.html">Branding</a>
+                <a class="btn btn-link" href="service.html">Marketing & Advertising</a>
+                <a class="btn btn-link" href="service.html">Accounting Solutions</a>
+                <a class="btn btn-link" href="service.html">Corporate Events</a>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Quick Links</h3>
+                <a class="btn btn-link" href="index-2.html">Home</a>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="service.html">Our Services</a>
+            </div>
+
+             <!-- Logo Section -->
+             <div class="col-lg-3 col-md-6 text-center">
+                <img src="img/logo-hue.jpg" alt="HueSpace Logo" class="img-fluid" style="max-width: 250px; height: auto; margin-top: 70px;  margin-left: -60px; margin-bottom: 20px;">
+
+                 <!-- Social & Contact Icons -->
+                
+            </div>
+
+
+
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com/">BuddSoft</a>
-                    </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
+                    <span>© 2025 Huespace | All Rights Reserved.</span>
+                    <span>Designed by Hirex Solution Pvt Limited</span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
+
+
+        <!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919778483334" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
 
 
     <!-- Back to Top -->
