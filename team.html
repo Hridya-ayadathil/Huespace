@@ -2,10 +2,10 @@
 <html lang="en">
 
 
-<!-- Mirrored from buddsoft.com/templates/21/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2025 15:08:15 GMT -->
+<!-- Mirrored from buddsoft.com/templates/21/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2025 15:08:15 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Arkitektur - Architecture HTML Template</title>
+    <title>Huespace</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,6 +32,49 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+
+    <style>
+        /* Floating WhatsApp Button */
+    /* Floating WhatsApp Button - Square Design */
+
+
+    
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure full-width layout */
+}
+    .whatsapp-float {
+        position: fixed;
+    bottom: 200px;
+    right: 20px;
+    background-color: #b9722d;
+    color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 0px;  /* Square with slightly rounded corners */
+    }
+    
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+    
+    .whatsapp-icon {
+        color: white;
+    }
+    
+    </style>
 </head>
 
 <body>
@@ -43,36 +86,88 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
-                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
+  <!-- Topbar Start -->
+<div class="container-fluid bg-dark p-0 wow fadeIn top-bar" data-wow-delay="0.1s" style=" background-color: #03032d    !important; ">
+    <div class="row gx-0 d-flex align-items-center text-center text-lg-start py-2">
+        
+        <!-- Contact Info & Social Icons in One Line -->
+        <div class="col-12 px-3 px-lg-5">
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center topbar-content">
+                
+                <!-- Contact Details -->
+                <div class="d-flex flex-wrap align-items-center contact-container">
+                    <a class="text-body contact-info px-2" href="tel:+919778483334">
+                        <i class="fa fa-phone-alt text-primary me-1"></i>+91 9778483334 | +91 94463 81619
+                    </a>
+                    <a class="text-body contact-info px-2" href="mailto:Info@huespace.co.in">
+                        <i class="fa fa-envelope-open text-primary me-1"></i>Info@huespace.co.in
+                    </a>
+                    <a class="text-body contact-info px-2" href="contact.html">
+                        <i class="fa fa-map-marker-alt text-primary me-1"></i>Kochi
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
-                    <a class="text-body px-2" href="#">Terms</a>
-                    <a class="text-body px-2" href="#">Privacy</a>
+
+                <!-- Social Media Icons -->
+                <div class="d-flex align-items-center social-icons">
+                    <a class="btn btn-sm btn-outline-body me-1" href="https://www.instagram.com/huespace.in?igsh=M2Z3aGU3Mmd5ZTUy" target="_blank">
+                        <i class="fab fa-instagram text-primary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-body me-1" href="https://wa.me/919778483334" target="_blank">
+                        <i class="fab fa-whatsapp text-primary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-body me-1" href="https://www.facebook.com/share/1BYZcynSry/" target="_blank">
+                        <i class="fab fa-facebook text-primary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-body me-1" href="tel:+919778483334">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-body" href="mailto:Info@huespace.co.in">
+                        <i class="fa fa-envelope text-primary"></i>
+                    </a>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square btn-outline-body me-0" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+
             </div>
         </div>
+
     </div>
-    <!-- Topbar End -->
+</div>
+<!-- Topbar End -->
+
+<style>
+    /* Reduce size and change background only on mobile (below 768px) */
+    @media (max-width: 768px) {
+        .top-bar {
+            background-color: #031f32 !important; /* Dark Blue Background on Mobile */
+            padding: 5px 0; /* Reduce padding */
+        }
+        .topbar-content {
+            flex-wrap: wrap; /* Wrap content if needed */
+            gap: 10px; /* Adjust spacing */
+            text-align: center; /* Center content */
+        }
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px; /* Adjust spacing */
+            font-size: 12px; /* Reduce font size */
+        }
+        .social-icons .btn {
+            font-size: 12px; /* Smaller icons */
+            padding: 5px 8px;
+        }
+    }
+    
+    
+    </style>
 
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">Arkitektur</h1>
+            <img class="me-3" src="img/logo-hue.jpg" alt="Icon" style="height: 80px; width:300px;">
+
+           
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -82,244 +177,607 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-0 m-0">
-                        <a href="feature.html" class="dropdown-item">Our Features</a>
-                        <a href="project.html" class="dropdown-item">Our Projects</a>
-                        <a href="team.html" class="dropdown-item active">Team Members</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+                <a href="team.html" class="nav-item nav-link active">Features</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
             </div>
-            <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a>
+            <a href="contact.html" class="btn btn-primary py-2 px-4 d-block">Appointment</a>
+            
         </div>
     </nav>
     <!-- Navbar End -->
+    
+    <style>
+    @media (max-width: 768px) {
+        .navbar .btn {
+            display: none !important; /* Hide button on mobile */
+        }
+    }
+    </style>
 
 
-    <!-- Page Header Start -->
+    <!-- Page Header Start 
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-1 text-white animated slideInDown">Members</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Members</li>
-                </ol>
-            </nav>
+            <h1 class="display-1 text-white animated slideInDown">Contact Us</h1>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase">
+                    <a class="text-white" href="index.html">Home</a>
+                </p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+            <p class="m-0 text-uppercase">contact</p>
+          </div>
         </div>
     </div>
     <!-- Page Header End -->
 
+    <style>
+    .service-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+    text-align: center; /* Align inline elements */
+}
 
-    <!-- Team Start -->
+.service-item .icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Ensure the icon does not stretch */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+
+        .service-item {
+         position: relative;
+         width: 100%; /* Full width */
+         max-width: 400px; /* Adjust as needed */
+         overflow: hidden;
+         background: rgba(0, 0, 0, 0.7); /* Darker background for better readability */
+         transition: background 0.5s ease-in-out;
+         font-family: "Arial", sans-serif; /* Standard font */
+         border-radius: 8px; /* Smooth edges */
+       
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+     }
+    
+     
+     .service-item .bg-img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -1;
+         opacity: 0.4; /* Adjust opacity for better text visibility */
+         transition: opacity 0.5s ease-in-out;
+     }
+     
+     .service-item .service-text {
+         position: relative;
+         padding: 20px; /* Increased padding */
+         text-align: left;
+         background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+         color: #fff;
+         transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+     }
+     
+     .service-item .service-text h3, 
+     .service-item .service-text p {
+         margin: 0;
+         padding: 5px 0;
+         color: #fff;
+         transition: color 0.5s ease-in-out;
+     }
+     
+     /* Hover effect for interactivity */
+     .service-item:hover {
+         background: rgba(0, 0, 0, 0.9);
+     }
+     
+     .service-item:hover .bg-img {
+         opacity: 0.6;
+     }
+    
+    
+
+     
+     </style>
+         <!-- Service Start -->
+         <div class="container-xxl py-3">
+             <div class="container">
+                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                     <h4 class="section-title">Expert Solutions for Your Business</h4>
+                     <h1 class="display-5 mb-4"></h1>
+                     
+                    
+                 </div>
+                
+                 <div class="row g-4">
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-1.jpg" alt="">
+                             <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
+                                 <h3 class="mb-3"> Branding </h3>
+                                
+                                 <p class="mb-4">At Huespace, we believe that branding is more than just a logo or a color scheme—it’s the essence of a business, the story it tells, and the emotions it evokes. A strong brand creates an immediate connection with customers, fosters loyalty, and sets a business apart in a crowded marketplace.
+     
+                                     Our branding expertise goes beyond aesthetics; we craft identities that leave a lasting impact. From defining core values and brand messaging to designing visual elements that reflect a company’s personality, we ensure that every aspect aligns seamlessly with its vision. We dive deep into market trends, audience behavior, and competitive landscapes to create strategies that not only capture attention but also drive engagement.
+                                     
+                                     Whether it's launching a new brand or revitalizing an existing one, we focus on authenticity, consistency, and innovation. Our goal is to create a brand that speaks to its audience, builds trust, and stands the test of time. With Huespace, businesses don’t just get a brand—they get a powerful identity that drives success.
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     </p>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     
+                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                             <div class="service-item d-flex position-relative text-center h-100">
+                                 <img class="bg-img" src="img/service-2.jpg" alt="">
+                                 <div class="service-text p-5">
+                                    <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
+                                     <h3 class="mb-3">Marketing & Advertising</h3>
+                                     <p class="mb-4">In today’s fast-paced digital world, marketing and advertising are not just about promoting products—they are about creating meaningful connections between brands and their audiences. At Huespace, we believe in crafting strategic campaigns that go beyond conventional advertising. Our approach is rooted in understanding consumer behavior, market trends, and brand positioning to develop campaigns that drive engagement and deliver measurable results.
+     
+                                         From digital marketing to traditional advertising, we leverage multiple channels to ensure maximum visibility. Whether it’s social media campaigns, content marketing, paid ads, or influencer collaborations, we tailor our strategies to reach the right audience at the right time. Our goal is not just to create awareness but to foster lasting relationships with customers, turning casual viewers into loyal brand advocates.
+                                         
+                                         We integrate creativity with data-driven insights to design impactful marketing strategies. By continuously analyzing campaign performance, we refine our approach to maximize return on investment (ROI). With Huespace, businesses don’t just get marketing solutions—they get a comprehensive growth strategy that positions them ahead of the competition.</p>
+                                 </div>
+                             </div>
+                         </div>
+                    
+                     
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-3.jpg" alt="">
+                             <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
+                                 <h3 class="mb-3">Accounting and taxation</h3>
+                                 <p class="mb-4">Effective financial management is the backbone of any successful business, ensuring stability, compliance, and long-term growth. At Huespace, we provide seamless accounting and taxation services designed to help businesses navigate complex financial landscapes with confidence. From bookkeeping and financial reporting to tax planning and regulatory compliance, our expert team ensures that every financial aspect is handled with precision and transparency.
+     
+                                     We understand that every business has unique financial needs, which is why we offer tailored solutions to optimize cash flow, reduce tax liabilities, and improve overall financial health. Our proactive approach helps businesses stay ahead of changing tax regulations, avoid unnecessary penalties, and take advantage of available tax benefits.
+                                     
+                                     By leveraging advanced financial tools and industry best practices, we provide insightful financial reports and analysis that empower business owners to make informed decisions. With Huespace, businesses can focus on growth while we handle the complexities of accounting and taxation, ensuring financial efficiency and long-term sustainability.
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     </p>
+                                
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-4.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
+                                 <h3 class="mb-3">Company Incorporation</h3>
+                                 <p class="mb-4">Starting a business is an exciting journey, but navigating the legal and administrative complexities can be overwhelming. At Huespace, we simplify the company incorporation process, ensuring a seamless and hassle-free business setup. From selecting the right business structure to handling legal documentation, registration, and compliance, our experts guide entrepreneurs through every step of the process.
+     
+                                     We provide tailored solutions based on the unique needs of each business, whether it's a startup, SME, or large corporation. Our team ensures that all legal formalities, such as obtaining licenses, drafting agreements, and meeting regulatory requirements, are completed efficiently and accurately.
+                                     
+                                     Beyond incorporation, we offer strategic advice on corporate governance, tax structuring, and operational planning to set businesses up for long-term success. With Huespace, entrepreneurs can confidently launch their ventures, knowing they have a reliable partner to handle the complexities of business formation while they focus on growth and innovation.</p>
+                              
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-5.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
+                                 <h3 class="mb-3">Business Advisory Services</h3>
+                                 <p class="mb-4">In today’s dynamic and competitive business landscape, having the right guidance is crucial for long-term success. At Huespace, we provide expert business advisory services designed to help companies navigate challenges, identify opportunities, and optimize their operations for sustainable growth.
+     
+                                     Our strategic consulting approach focuses on key areas such as financial planning, market expansion, risk management, and operational efficiency. We work closely with businesses to analyze their current performance, develop customized strategies, and implement solutions that enhance profitability and productivity.
+                                     
+                                     Whether you're a startup looking for a strong foundation or an established company aiming for expansion, our team of experienced advisors offers insights and practical solutions to drive success. With a deep understanding of market trends and industry best practices, we empower businesses to make informed decisions, adapt to changing conditions, and achieve their long-term goals with confidence.
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     </p>
+                           
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-6.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
+                                 <h3 class="mb-3">Investment Pitch Deck </h3>
+                                 <p class="mb-4">A well-crafted investment pitch deck is a powerful tool that can make or break a funding opportunity. At Huespace, we specialize in creating compelling and persuasive pitch decks that capture investor interest and effectively communicate your business vision, value proposition, and growth potential.
+     
+                                     Our approach goes beyond just designing slides—we focus on storytelling, data-driven insights, and clear financial projections that resonate with investors. We structure pitch decks to highlight key aspects such as market opportunity, competitive advantage, business model, revenue projections, and exit strategies, ensuring that every element is strategically aligned to attract funding.
+                                     
+                                     With our expertise, we transform complex business concepts into visually appealing, concise, and impactful presentations that leave a lasting impression. Whether you're seeking venture capital, angel investment, or corporate funding, our pitch decks help you stand out in a competitive investment landscape and secure the financial backing needed to scale your business.
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     </p>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-6.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-2.png" alt="Icon">
+                                 <h3 class="mb-3">Organization Restructure </h3>
+                                 <p class="mb-4"> 
+     
+                                     In today’s dynamic business environment, organizations must constantly adapt to stay competitive and efficient. At Huespace, we specialize in organizational restructuring to help businesses optimize their operations, improve workflow, and drive sustainable growth.  
+                                     
+                                     Our approach involves analyzing existing structures, identifying inefficiencies, and implementing strategic changes that enhance productivity and scalability. Whether it's redefining roles, optimizing processes, or implementing new management frameworks, we ensure a seamless transition that aligns with business goals.  
+                                     
+                                     By fostering a culture of agility and efficiency, our restructuring solutions empower businesses to navigate challenges, maximize resources, and position themselves for long-term success. With Huespace, organizations gain a structured, future-ready framework that enhances performance and operational excellence.</p>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-6.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-3.png" alt="Icon">
+                                 <h3 class="mb-3">Management consultant </h3>
+                                 <p class="mb-4">At Huespace, we provide expert financial and operational solutions designed to drive business success. As management consultants, we specialize in helping businesses streamline operations, optimize financial strategies, and implement best practices for long-term growth.
+     
+                                     Our services include Virtual CFO solutions, MIS reporting, setting up Standard Operating Procedures (SOPs), and strategic planning to enhance efficiency and decision-making. We work closely with businesses to identify challenges, develop data-driven strategies, and execute tailored solutions that improve profitability and sustainability.
+                                     
+                                     With our deep industry expertise and commitment to excellence, we empower businesses to navigate complex financial landscapes, enhance operational efficiency, and achieve their strategic objectives. Partner with Huespace for insightful guidance, measurable results, and a future-focused approach to business success.</p>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <div class="service-item d-flex position-relative text-center h-100">
+                             <img class="bg-img" src="img/service-6.jpg" alt="">
+                             <div class="service-text p-5">
+                                 <img class="mb-4" src="img/icons/icon-4.png" alt="Icon">
+                                 <h3 class="mb-3">Corporate and party Events </h3>
+                                 <p class="mb-4">At Huespace, we specialize in planning and executing professional gatherings that inspire, engage, and connect. Whether it's a high-profile corporate event, an industry conference, or a private celebration, we ensure seamless execution with meticulous attention to detail.
+     
+                                     Our expert team handles everything from venue selection and theme conceptualization to logistics, entertainment, and guest management. We focus on creating memorable experiences that reflect your brand’s identity, foster networking opportunities, and leave a lasting impact.
+                                     
+                                     With a strategic approach and creative flair, we transform ordinary events into extraordinary experiences. Whether you’re hosting a corporate seminar, product launch, gala dinner, or private party, Huespace delivers professionalism, innovation, and excellence every step of the way.</p>
+                                 
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </a>
+         <!-- Service End -->
+     
+
+
+   
+    <!-- Appointment 
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Team Members</h4>
-                <h1 class="display-5 mb-4">We Are Creative Architecture Team For Your Dream Home</h1>
-            </div>
-            <div class="row g-0 team-items">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title">Contact</h4>
+                    <h1 class="display-5 mb-4">Make An Appointment To Start Your Dream Project</h1>
+                    <p class="mb-4">Your vision deserves to be transformed into reality. At Huespace, we help businesses and entrepreneurs bring their ideas to life with strategic planning, expert guidance, and innovative solutions.
+
+                        
+                        </p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                              
+                                <a href="tel:+919778483334" class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                                </a>
+                    
+                                <div class="mx-2"></div>
+                                <a href="mailto:Info@huespace.co.in" class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                                </a>
                             </div>
+                            
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
+                        <div class="col-12">
+                            <div class="d-flex">
+                               
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" style="height: 55px;">
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" style="height: 55px;">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" id="mobile" class="form-control" placeholder="Your Mobile" style="height: 55px;">
                         </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="button" onclick="sendToWhatsApp()">Book Appointment</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h3 class="mt-2">Architect Name</h3>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
+                
+                <script>
+                    function sendToWhatsApp() {
+                        var name = document.getElementById("name").value.trim();
+                        var email = document.getElementById("email").value.trim();
+                        var mobile = document.getElementById("mobile").value.trim();
+                        var subject = document.getElementById("subject").value.trim();
+                        var message = document.getElementById("message").value.trim();
+                
+                        if (name === "" || email === "" || mobile === "" || subject === "" || message === "") {
+                            alert("Please fill in all fields before booking an appointment.");
+                            return;
+                        }
+                
+                        var phoneNumber = "919778483334"; // WhatsApp number (without +)
+                        var text = `*Book Appointment Request*%0A
+                        *Name:* ${encodeURIComponent(name)}%0A
+                        *Email:* ${encodeURIComponent(email)}%0A
+                        *Mobile:* ${encodeURIComponent(mobile)}%0A
+                        *Subject:* ${encodeURIComponent(subject)}%0A
+                        *Message:* ${encodeURIComponent(message)}`;
+                
+                        var whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+                        window.open(whatsappUrl, '_blank'); // Open in a new tab
+                    }
+                </script>
             </div>
         </div>
     </div>
-    <!-- Team End -->
-        
+    </div>
+    
+
+
+    
+    <div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <iframe class="w-100 mb-n2" style="height: 450px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+-->
+
+ <!-- Contact Start 
+ <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-medium text-primary">Contact Us</p>
+            <h1 class="display-5 mb-5">If You Have Any Query, Please Contact Us</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h3 class="mb-4">Make An Appointment To Start Your Dream Project</h3>
+                <p class="mb-4">Your vision deserves to be transformed into reality. At Huespace, we help businesses and entrepreneurs bring their ideas to life with strategic planning, expert guidance, and innovative solutions.</a></p>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="button" onclick="sendToWhatsApp()">Submit Now</button>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                function sendToWhatsApp() {
+                    var name = document.getElementById("name").value.trim();
+                    var email = document.getElementById("email").value.trim(); // Corrected email ID
+                    var subject = document.getElementById("subject").value.trim(); // Fixed subject ID
+                    var message = document.getElementById("message").value.trim();
+            
+                    // Validate required fields
+                    if (name === "" || email === "" || subject === "" || message === "") {
+                        alert("Please fill in all fields before submitting.");
+                        return;
+                    }
+            
+                    var phoneNumber = "919778483334"; // WhatsApp number (without +)
+                    var text = `*Quote Request*%0A
+                    *Name:* ${encodeURIComponent(name)}%0A
+                    *Email:* ${encodeURIComponent(email)}%0A
+                    *Subject:* ${encodeURIComponent(subject)}%0A
+                    *Message:* ${encodeURIComponent(message)}`;
+            
+                    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+                    window.open(whatsappUrl, '_blank'); // Open in a new tab
+                }
+            </script>
+            
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <h3 class="mb-4">Contact Details</h3>
+                <div class="d-flex border-bottom pb-3 mb-3">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                        <i class="fa fa-map-marker-alt text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h6>Our Office</h6>
+                        <span>HueSpace LLP Door # B2 Kollamkudimugal Kochi</span>
+                    </div>
+                </div>
+                <div class="d-flex border-bottom pb-3 mb-3">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                        <i class="fa fa-phone-alt text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h6>Call Us</h6>
+                        <span>+91 9778483334  +91 94463 81619</span>
+                    </div>
+                </div>
+                <div class="d-flex border-bottom-0 pb-3 mb-3">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                        <i class="fa fa-envelope text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h6>Mail Us</h6>
+                        <span>Info@huespace.co.in</span>
+                    </div>
+                </div>
+
+                <iframe class="w-100 rounded"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.838417640352!2d76.3423147!3d10.0264317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDAxJzM1LjIiTiA3NsKwMjAnNDEuNiJF!5e0!3m2!1sen!2sin!4v1709654123456!5m2!1sen!2sin"
+                frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+                </iframe>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+
+
+
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-body me-1" href="#"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-body me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+<div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s" style=" background-color: #04041d !important; ">
+    <div class="container py-5">
+        <div class="row g-5">
+
+           
+            
+            <!-- Address Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Address</h3>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>HueSpace LLP Door # B2 Kollamkudimugal Kochi</p>
+             
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-body me-1" href="https://www.instagram.com/huespace.in?igsh=M2Z3aGU3Mmd5ZTUy" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="https://wa.me/919778483334" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="https://www.facebook.com/share/1BYZcynSry/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="tel:+919778483334">
+                        <i class="fa fa-phone-alt"></i>
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-0" href="mailto:Info@huespace.co.in">
+                        <i class="fa fa-envelope text-primary"></i>
+                    </a>
+                    
+
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Services</h3>
-                    <a class="btn btn-link" href="#">Architecture</a>
-                    <a class="btn btn-link" href="#">3D Animation</a>
-                    <a class="btn btn-link" href="#">House Planning</a>
-                    <a class="btn btn-link" href="#">Interior Design</a>
-                    <a class="btn btn-link" href="#">Construction</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="#">About Us</a>
-                    <a class="btn btn-link" href="#">Contact Us</a>
-                    <a class="btn btn-link" href="#">Our Services</a>
-                    <a class="btn btn-link" href="#">Terms & Condition</a>
-                    <a class="btn btn-link" href="#">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Newsletter</h3>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+               
             </div>
+           
+            <!-- Services Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Services</h3>
+                <a class="btn btn-link" href="service.html">Branding</a>
+                <a class="btn btn-link" href="service.html">Marketing & Advertising</a>
+                <a class="btn btn-link" href="service.html">Accounting Solutions</a>
+                <a class="btn btn-link" href="service.html">Corporate Events.</a>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-light mb-4">Quick Links</h3>
+                <a class="btn btn-link" href="index.html">Home</a>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="service.html">Our Services</a>
+            </div>
+
+             <!-- Logo Section -->
+             <div class="col-lg-3 col-md-6 text-center">
+                <img src="img/logo-hue.jpg" alt="HueSpace Logo" class="img-fluid" style="max-width: 250px; height: auto; margin-top: 70px;  margin-left: -60px; margin-bottom: 20px;">
+
+                 <!-- Social & Contact Icons -->
+                
+            </div>
+
+
+
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com/">BuddSoft</a>
-                    </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
+                    <span>© 2025 Huespace | All Rights Reserved.</span>
+                    <span>Designed by Hirex Solutions </span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919778483334" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style=" bottom: 140px;
+   right: 20px;"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -339,5 +797,5 @@
 </body>
 
 
-<!-- Mirrored from buddsoft.com/templates/21/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2025 15:08:15 GMT -->
+<!-- Mirrored from buddsoft.com/templates/21/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Feb 2025 15:08:15 GMT -->
 </html>

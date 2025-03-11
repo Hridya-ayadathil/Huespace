@@ -358,11 +358,11 @@ h6,
 /***sn***/
 
 
-/*** Service ***/
+/*** Service hover effect 
 .service-item {
     position: relative;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.5); /* Initially semi-transparent background */
+    background: rgba(0, 0, 0, 0.5); 
     transition: background 0.5s ease-in-out;
     font-family: auto;
 }
@@ -373,40 +373,40 @@ h6,
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5; /* Initially visible with transparency */
+    opacity: 0.5; 
     transition: opacity 0.5s ease-in-out;
 }
 
 .service-item .service-text {
-    background: transparent; /* Initially transparent text background */
-    color: #FFFFFF; /* White text initially */
+    background: transparent; 
+    color: #FFFFFF; 
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
     font-family: auto;
 }
 
 .service-item .service-text h3, 
 .service-item .service-text p {
-    color: #FFFFFF; /* Ensure white text initially */
+    color: #FFFFFF; 
     transition: color 0.5s ease-in-out;
 }
 
-/* Hover Effect (On Touch) */
+ Hover Effect (On Touch) 
 .service-item:hover {
-    background: #FFFFFF; /* Changes to plain white background on hover */
+    background: #FFFFFF;
 }
 
 .service-item:hover .bg-img {
-    opacity: 0; /* Hide the background image on hover */
+    opacity: 0; 
 }
 
 .service-item:hover .service-text {
-    background: var(--light); /* Restores the normal text background */
-    color: var(--dark); /* Dark text on hover */
+    background: var(--light);
+    color: var(--dark); 
 }
 
 .service-item:hover .service-text h3, 
 .service-item:hover .service-text p {
-    color: var(--dark); /* Text color changes to dark */
+    color: var(--dark); 
 }
 
 .service-item .btn {

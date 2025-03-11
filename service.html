@@ -113,6 +113,9 @@ html, body {
                     <a class="btn btn-sm btn-outline-body me-1" href="https://wa.me/919778483334" target="_blank">
                         <i class="fab fa-whatsapp text-primary"></i>
                     </a>
+                    <a class="btn btn-sm btn-outline-body me-1" href="https://www.facebook.com/share/1BYZcynSry/" target="_blank">
+                        <i class="fab fa-facebook text-primary"></i>
+                    </a>
                     <a class="btn btn-sm btn-outline-body me-1" href="tel:+919778483334">
                         <i class="fa fa-phone-alt text-primary"></i>
                     </a>
@@ -172,8 +175,9 @@ html, body {
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link active">Services</a>
-               
+                <a href="team.html" class="nav-item nav-link ">Features</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
+                
             </div>
             <a href="contact.html" class="btn btn-primary py-2 px-4 d-block">Appointment</a>
         </div>
@@ -209,125 +213,157 @@ html, body {
 
     
 
-
-   <!-- Service Start -->
-   <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h4 class="section-title">Our Services</h4>
-            <h1 class="display-5 mb-4">Comprehensive Business Solutions for Growth & Success</h1>
-            
-           
+    <style>
+        .service-item {
+        position: relative;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.5); 
+        transition: background 0.5s ease-in-out;
+        font-family: auto;
+    }
+    
+    .service-item .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.5; 
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .service-item .service-text {
+        background: transparent; 
+        color: #FFFFFF; 
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        font-family: auto;
+    }
+    
+    .service-item .service-text h3, 
+    .service-item .service-text p {
+        color: #FFFFFF; 
+        transition: color 0.5s ease-in-out;
+    }
+    
+    </style>
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h4 class="section-title">Our Services</h4>
+                    <h1 class="display-5 mb-4">Comprehensive Business Solutions for Growth & Success</h1>
+                    
+                   
+                </div>
+                <a href="team.html" class="service-link">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-1.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
+                                <h3 class="mb-3"> Branding </h3>
+                               
+                                <p class="mb-4">Crafting unique brand identities that resonate and leave a lasting impact.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item d-flex position-relative text-center h-100">
+                                <img class="bg-img" src="img/service-2.jpg" alt="">
+                                <div class="service-text p-5">
+                                    <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
+                                    <h3 class="mb-3">Marketing & Advertising</h3>
+                                    <p class="mb-4">Designing strategic campaigns to amplify visibility and engagement</p>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-3.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
+                                <h3 class="mb-3">Accounting and taxation</h3>
+                                <p class="mb-4">Providing seamless financial management for sustainable business growth.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-4.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
+                                <h3 class="mb-3">Company Incorporation</h3>
+                                <p class="mb-4">Assisting with seamless business setup and legal formalities.</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-5.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
+                                <h3 class="mb-3">Business Advisory Services</h3>
+                                <p class="mb-4">Offering expert guidance for business growth and optimization.</p>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-6.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
+                                <h3 class="mb-3">Investment Pitch Deck </h3>
+                                <p class="mb-4">Creating compelling presentations to attract investors.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-6.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-2.png" alt="Icon">
+                                <h3 class="mb-3">Organization Restructure </h3>
+                                <p class="mb-4">Streamlining operations for efficiency and scalability.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-6.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-3.png" alt="Icon">
+                                <h3 class="mb-3">Management consultant </h3>
+                                <p class="mb-4">Providing expert financial and operational solutions to drive business success.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex position-relative text-center h-100">
+                            <img class="bg-img" src="img/service-6.jpg" alt="">
+                            <div class="service-text p-5">
+                                <img class="mb-4" src="img/icons/icon-4.png" alt="Icon">
+                                <h3 class="mb-3">Corporate and party Events </h3>
+                                <p class="mb-4">Planning and executing professional gatherings that inspire and connect.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-1.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
-                        <h3 class="mb-3"> Branding </h3>
-                        <p class="mb-4">Crafting unique brand identities that resonate and leave a lasting impact.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-2.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
-                        <h3 class="mb-3">Marketing & Advertising</h3>
-                        <p class="mb-4">Designing strategic campaigns to amplify visibility and engagement</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-3.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
-                        <h3 class="mb-3">Accounting Solutions</h3>
-                        <p class="mb-4">Providing seamless financial management for sustainable business growth.</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-4.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
-                        <h3 class="mb-3">Company Incorporation</h3>
-                        <p class="mb-4">Assisting with seamless business setup and legal formalities.</p>
-                     
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-5.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
-                        <h3 class="mb-3">Corporate Events</h3>
-                        <p class="mb-4">Planning and executing professional gatherings that inspire and connect.</p>
-                  
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item d-flex position-relative text-center h-100">
-                    <img class="bg-img" src="img/service-6.jpg" alt="">
-                    <div class="service-text p-5">
-                        <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
-                        <h3 class="mb-3">Organization Restructure </h3>
-                        <p class="mb-4">Streamlining operations for efficiency and scalability.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Service End -->
-
-
-<!-- Facts Start -->
-<div class="container-xxl py-5">
-    <div class="container pt-5">
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                    <div class="fact-icon">
-                        <img src="img/icons/icon-2.png" alt="Icon">
-                    </div>
-                    <h3 class="mb-3">Business Advisory Services </h3>
-                    <p class="mb-0"> Offering expert guidance for business growth and optimization.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                    <div class="fact-icon">
-                        <img src="img/icons/icon-3.png" alt="Icon">
-                    </div>
-                    <h3 class="mb-3">Investment Pitch Deck</h3>
-                    <p class="mb-0">Creating compelling presentations to attract investors.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                    <div class="fact-icon">
-                        <img src="img/icons/icon-4.png" alt="Icon">
-                    </div>
-                    <h3 class="mb-3">Party Events </h3>
-                    <p class="mb-0">Creating unforgettable celebrations with creativity and precision.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Facts End -->
-
+    </a>
+        <!-- Service End -->
 
     <!-- Testimonial 
     <div class="container-xxl py-5">
@@ -376,6 +412,10 @@ html, body {
                     </a>
                     <a class="btn btn-square btn-outline-body me-1" href="https://wa.me/919778483334" target="_blank">
                         <i class="fab fa-whatsapp"></i>
+                        
+                    </a>
+                    <a class="btn btn-square btn-outline-body me-1" href="https://www.facebook.com/share/1BYZcynSry/" target="_blank">
+                        <i class="fab fa-facebook"></i>
                     </a>
                     <a class="btn btn-square btn-outline-body me-1" href="tel:+919778483334">
                         <i class="fa fa-phone-alt"></i>
@@ -426,7 +466,7 @@ html, body {
             <div class="row">
                 <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
                     <span>© 2025 Huespace | All Rights Reserved.</span>
-                    <span>Designed by Hirex Solution Pvt Limited</span>
+                    <span>Designed by Hirex solutions </span>
                 </div>
             </div>
         </div>
